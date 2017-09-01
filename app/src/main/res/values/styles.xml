@@ -9,4 +9,16 @@
         <item name="android:navigationBarColor">@color/teal_600</item>
     </style>
 
+    <style name="NoActionbar" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/teal_600</item>
+        <item name="colorPrimaryDark">@color/teal_800</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:navigationBarColor">@color/teal_600</item>
+    </style>
+
+    <style name="NoActionbar.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="NoActionbar.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
 </resources>
