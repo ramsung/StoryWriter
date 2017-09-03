@@ -21,11 +21,11 @@
             android:gravity="center"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:layout_weight="1"
+            android:layout_weight="0"
             android:background="?attr/colorPrimary"
             app:layout_scrollFlags="scroll|enterAlways"
             app:popupTheme="@style/NoActionbar.PopupOverlay"
-            app:title="@string/app_name">
+            >
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

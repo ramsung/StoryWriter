@@ -1,12 +1,13 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/teal_600</item>
         <item name="colorPrimaryDark">@color/teal_800</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="android:navigationBarColor">@color/teal_600</item>
+        <item name="android:textColorPrimary">@color/white</item>
     </style>
 
     <style name="NoActionbar" parent="Theme.AppCompat.NoActionBar">
@@ -21,4 +22,9 @@
 
     <style name="NoActionbar.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
 
+
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/red_800</item>
+        <item name="colorControlActivated">@color/grey_700</item>
+    </style>
 </resources>
