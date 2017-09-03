@@ -60,14 +60,14 @@ public class viewPageFragment extends Fragment {
 		// Inflate the layout for this fragment
 		String content = getArguments().getString(ARG_C);
 		View trending = inflater.inflate(R.layout.fragment_trending,container,false);
-		View novels = inflater.inflate(R.layout.fragment_novel, container, false);
+		View category = inflater.inflate(R.layout.fragment_category, container, false);
 		View longStories  = inflater.inflate(R.layout.fragment_longstories, container, false);
 		View shortStories = inflater.inflate(R.layout.fragment_shortstories, container, false);
 		if (Integer.parseInt(content) == 0) {
 
 			return trending;
 		} else if (Integer.parseInt(content) == 1) {
-			return novels;
+			return category;
 		}else if (Integer.parseInt(content) == 2) {
 			return longStories;
 		}

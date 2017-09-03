@@ -38,7 +38,7 @@
     <color name="light_blue_100">#B3E5FC</color>
     <color name="light_blue_200">#81D4FA</color>
     <color name="light_blue_300">#4FC3F7</color>
-    <color name="light_blue_400">#29B6F6</color>
+    <color name="light_blue_400">#29b6f6</color>
     <color name="light_blue_500">#03A9F4</color>
     <color name="light_blue_600">#039BE5</color>
     <color name="light_blue_700">#0288D1</color>
@@ -87,7 +87,7 @@
     <color name="deep_orange_500">#FF5722</color>
     <color name="deep_orange_600">#F4511E</color>
     <color name="deep_orange_700">#E64A19</color>
-    <color name="deep_orange_800">#D84315</color>
+    <color name="deep_orange_800">#d84315</color>
     <color name="deep_orange_900">#BF360C</color>
     <color name="deep_orange_A100">#FF9E80</color>
     <color name="deep_orange_A200">#FF6E40</color>
@@ -131,7 +131,7 @@
     <color name="indigo_800">#283593</color>
     <color name="indigo_900">#1A237E</color>
     <color name="indigo_A100">#8C9EFF</color>
-    <color name="indigo_A200">#536DFE</color>
+    <color name="indigo_A200">#536dfe</color>
     <color name="indigo_A400">#3D5AFE</color>
     <color name="indigo_A700">#304FFE</color>
 
@@ -148,7 +148,7 @@
     <color name="cyan_A100">#84FFFF</color>
     <color name="cyan_A200">#18FFFF</color>
     <color name="cyan_A400">#00E5FF</color>
-    <color name="cyan_A700">#00B8D4</color>
+    <color name="cyan_A700">#00b8d4</color>
 
     <color name="light_green_50">#F1F8E9</color>
     <color name="light_green_100">#DCEDC8</color>
@@ -174,7 +174,7 @@
     <color name="amber_600">#ffb300</color>
     <color name="amber_700">#ffa000</color>
     <color name="amber_800">#ff8f00</color>
-    <color name="amber_900">#FF6F00</color>
+    <color name="amber_900">#ff6f00</color>
     <color name="amber_A100">#FFE57F</color>
     <color name="amber_A200">#FFD740</color>
     <color name="amber_A400">#FFC400</color>
@@ -240,7 +240,7 @@
     <color name="lime_100">#F0F4C3</color>
     <color name="lime_200">#E6EE9C</color>
     <color name="lime_300">#DCE775</color>
-    <color name="lime_400">#D4E157</color>
+    <color name="lime_400">#d4e157</color>
     <color name="lime_500">#CDDC39</color>
     <color name="lime_600">#C0CA33</color>
     <color name="lime_700">#AFB42B</color>
@@ -249,7 +249,7 @@
     <color name="lime_A100">#F4FF81</color>
     <color name="lime_A200">#EEFF41</color>
     <color name="lime_A400">#C6FF00</color>
-    <color name="lime_A700">#AEEA00</color>
+    <color name="lime_A700">#aeea00</color>
 
     <color name="orange_50">#FFF3E0</color>
     <color name="orange_100">#FFE0B2</color>
@@ -270,7 +270,7 @@
     <color name="grey_100">#F5F5F5</color>
     <color name="grey_200">#EEEEEE</color>
     <color name="grey_300">#E0E0E0</color>
-    <color name="grey_400">#BDBDBD</color>
+    <color name="grey_400">#bdbdbd</color>
     <color name="grey_500">#9E9E9E</color>
     <color name="grey_600">#757575</color>
     <color name="grey_700">#616161</color>
