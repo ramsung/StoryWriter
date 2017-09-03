@@ -5,25 +5,18 @@ package beyonity.storywriter;
  */
 
 
-import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
-import android.support.v4.view.ViewPager;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
 import java.util.ArrayList;
 import java.util.List;
-import beyonity.storywriter.R;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -60,13 +53,14 @@ public class viewPageFragment extends Fragment {
 		// Inflate the layout for this fragment
 		String content = getArguments().getString(ARG_C);
 		View trending = inflater.inflate(R.layout.fragment_trending,container,false);
-		View category = inflater.inflate(R.layout.fragment_category, container, false);
+		View category = inflater.inflate(R.layout.fragment_catagory, container, false);
 		View longStories  = inflater.inflate(R.layout.fragment_longstories, container, false);
 		View shortStories = inflater.inflate(R.layout.fragment_shortstories, container, false);
 		if (Integer.parseInt(content) == 0) {
 
 			return trending;
 		} else if (Integer.parseInt(content) == 1) {
+			setUpCatagories(category);
 			return category;
 		}else if (Integer.parseInt(content) == 2) {
 			return longStories;
@@ -74,6 +68,25 @@ public class viewPageFragment extends Fragment {
 
 
 		return shortStories;
+	}
+
+	private void setUpCatagories(View category) {
+		List<catagoryModel> list = new ArrayList<>();
+		Catagory_Adapter adapter = new Catagory_Adapter(list);
+		RecyclerView rv = (RecyclerView) category.findViewById(R.id.recyclerview);
+		RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getContext());
+		rv.setLayoutManager(mLayoutManager);
+		rv.setItemAnimator(new DefaultItemAnimator());
+		rv.setAdapter(adapter);
+
+		catagoryModel model1 = new catagoryModel(R.drawable.scifi,"science fiction","1000");
+		catagoryModel model2 = new catagoryModel(R.drawable.horror,"Horror","1000");
+
+		list.add(model1);
+		list.add(model2);
+
+		adapter.notifyDataSetChanged();
+
 	}
 
 
