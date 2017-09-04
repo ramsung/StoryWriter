@@ -1,15 +1,20 @@
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                                             xmlns:app="http://schemas.android.com/apk/res-auto"
-                                             xmlns:tools="http://schemas.android.com/tools"
-                                             android:id="@+id/constraintLayout"
-
-                                             android:layout_width="match_parent"
-                                             android:layout_height="match_parent"
-                                             >
-<android.support.v7.widget.RecyclerView
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/GridLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/trendview">
-</android.support.v7.widget.RecyclerView>
+    android:layout_gravity="center_horizontal"
+    android:gravity="center"
+    >
 
-</android.support.constraint.ConstraintLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/trendview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+    </android.support.v7.widget.RecyclerView>
+
+</GridLayout>

@@ -55,20 +55,20 @@ public class viewPageFragment extends Fragment {
 		String content = getArguments().getString(ARG_C);
 		View trending = inflater.inflate(R.layout.fragment_trending,container,false);
 		View category = inflater.inflate(R.layout.fragment_catagory, container, false);
-		View longStories  = inflater.inflate(R.layout.fragment_longstories, container, false);
-		View shortStories = inflater.inflate(R.layout.fragment_shortstories, container, false);
+		View author  = inflater.inflate(R.layout.fragment_author, container, false);
+		View myStories = inflater.inflate(R.layout.fragment_mystories, container, false);
 		if (Integer.parseInt(content) == 0) {
-
+			setUptrending(trending);
 			return trending;
 		} else if (Integer.parseInt(content) == 1) {
 			setUpCatagories(category);
 			return category;
 		}else if (Integer.parseInt(content) == 2) {
-			return longStories;
+			return author;
 		}
 
 
-		return shortStories;
+		return myStories;
 	}
 
 	private void setUpCatagories(View category) {
@@ -126,24 +126,24 @@ public class viewPageFragment extends Fragment {
 	}
 
 	private void setUptrending(View trending) {
-		List<catagoryModel> list = new ArrayList<>();
-		Catagory_Adapter adapter = new Catagory_Adapter(list);
+		List<trendingModel> list = new ArrayList<>();
+		trending_Adapter adapter = new trending_Adapter(list);
 		RecyclerView rv = (RecyclerView) trending.findViewById(R.id.trendview);
-		RecyclerView.LayoutManager mLayoutManager = new GridLayoutManager(getContext());
-		rv.setLayoutManager(mLayoutManager);
+		GridLayoutManager layoutManager = new GridLayoutManager(getContext(), 2);  rv.setLayoutManager(layoutManager);
+		rv.setLayoutManager(layoutManager);
 		rv.setItemAnimator(new DefaultItemAnimator());
 		rv.setAdapter(adapter);
 
-		catagoryModel model1 = new catagoryModel(R.drawable.scifi,"science fiction","1000");
-		catagoryModel model2 = new catagoryModel(R.drawable.horror,"Horror","1000");
-		catagoryModel model3 = new catagoryModel(R.drawable.epic,"epic","100");
-		catagoryModel model4 = new catagoryModel(R.drawable.fiction,"fiction","1000");
-		catagoryModel model5 = new catagoryModel(R.drawable.fantasy,"fantasy","1000");
-		catagoryModel model6 = new catagoryModel(R.drawable.children,"children","1000");
-		catagoryModel model7 = new catagoryModel(R.drawable.humour,"humour","1000");
-		catagoryModel model8 = new catagoryModel(R.drawable.thriller,"thriller","1000");
-		catagoryModel model9 = new catagoryModel(R.drawable.autobiographies,"Autobiographies","1000");
-		catagoryModel model10 = new catagoryModel(R.drawable.poetry,"poetry","1000");
+		trendingModel model1 = new trendingModel(R.drawable.cover1,"Invincible Ironman");
+		trendingModel model2 = new trendingModel(R.drawable.cover2,"Batman");
+		trendingModel model3 = new trendingModel(R.drawable.cover3,"Justice League");
+		trendingModel model4 = new trendingModel(R.drawable.cover4,"Love");
+		trendingModel model5 = new trendingModel(R.drawable.cover5,"Crime Fighter");
+		trendingModel model6 = new trendingModel(R.drawable.cover6,"ABC");
+		trendingModel model7 = new trendingModel(R.drawable.cover7,"A Joke");
+		trendingModel model8 = new trendingModel(R.drawable.cover8,"Thrilling");
+		trendingModel model9 = new trendingModel(R.drawable.cover9,"I'm Mandella");
+		trendingModel model10 = new trendingModel(R.drawable.cover10,"Poems are Best");
 
 
 		list.add(model1);

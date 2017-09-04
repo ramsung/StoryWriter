@@ -7,7 +7,6 @@ package beyonity.storywriter;
 public class trendingModel {
 	int imageId;
 	String name;
-	String totalStories;
 
 	public int getImageId() {
 		return imageId;
@@ -25,17 +24,13 @@ public class trendingModel {
 		this.name = name;
 	}
 
-	public String getTotalStories() {
-		return totalStories;
-	}
 
-	public void setTotalStories(String totalStories) {
-		this.totalStories = totalStories;
-	}
 
-	public trendingModel(int imageId, String name, String totalStories) {
+
+
+	public trendingModel(int imageId, String name) {
 		this.imageId = imageId;
 		this.name = name;
-		this.totalStories = totalStories;
+
 	}
 }

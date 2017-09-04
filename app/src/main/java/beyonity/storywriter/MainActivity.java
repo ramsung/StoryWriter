@@ -38,8 +38,8 @@ public class MainActivity extends AppCompatActivity
 		TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
 		tabLayout.getTabAt(0).setText("Trending");
 		tabLayout.getTabAt(1).setText("Categories");
-		tabLayout.getTabAt(2).setText("Long Stories");
-		tabLayout.getTabAt(3).setText("Short Stories");
+		tabLayout.getTabAt(2).setText("Author");
+		tabLayout.getTabAt(3).setText("My Stories");
 
 
 		mViewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
