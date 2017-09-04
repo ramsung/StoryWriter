@@ -5,21 +5,11 @@
 
                                              android:layout_width="match_parent"
                                              android:layout_height="match_parent"
-                                             tools:context="beyonity.storywriter.MainActivity$PlaceholderFragment">
-<RelativeLayout
+                                             >
+<android.support.v7.widget.RecyclerView
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white">
-    <TextView
-        android:id="@+id/section_label"
-        android:layout_width="wrap_content"
-        android:text="Trending"
-        android:textSize="25sp"
-        android:textColor="@color/blue_grey_600"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"/>
-
-</RelativeLayout>
-
+    android:id="@+id/trendview">
+</android.support.v7.widget.RecyclerView>
 
 </android.support.constraint.ConstraintLayout>

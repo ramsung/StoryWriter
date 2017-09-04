@@ -9,6 +9,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.DefaultItemAnimator;
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -81,14 +82,85 @@ public class viewPageFragment extends Fragment {
 
 		catagoryModel model1 = new catagoryModel(R.drawable.scifi,"science fiction","1000");
 		catagoryModel model2 = new catagoryModel(R.drawable.horror,"Horror","1000");
+		catagoryModel model3 = new catagoryModel(R.drawable.epic,"epic","100");
+		catagoryModel model4 = new catagoryModel(R.drawable.fiction,"fiction","1000");
+		catagoryModel model5 = new catagoryModel(R.drawable.fantasy,"fantasy","1000");
+		catagoryModel model6 = new catagoryModel(R.drawable.children,"children","1000");
+		catagoryModel model7 = new catagoryModel(R.drawable.humour,"humour","1000");
+		catagoryModel model8 = new catagoryModel(R.drawable.thriller,"thriller","1000");
+		catagoryModel model9 = new catagoryModel(R.drawable.autobiographies,"Autobiographies","1000");
+		catagoryModel model10 = new catagoryModel(R.drawable.poetry,"poetry","1000");
+		catagoryModel model11 = new catagoryModel(R.drawable.romance,"Romance","1000");
+		catagoryModel model12 = new catagoryModel(R.drawable.mystery,"Mystery","1000");
+		catagoryModel model13 = new catagoryModel(R.drawable.travel,"Travel","100");
+		catagoryModel model14 = new catagoryModel(R.drawable.journal,"Journals","1000");
+		catagoryModel model15 = new catagoryModel(R.drawable.series,"Series","1000");
+		catagoryModel model16 = new catagoryModel(R.drawable.history,"History","1000");
+		catagoryModel model17 = new catagoryModel(R.drawable.tragic_humour,"tragic humour","1000");
+		catagoryModel model18 = new catagoryModel(R.drawable.health,"health","1000");
+
 
 		list.add(model1);
 		list.add(model2);
+		list.add(model3);
+		list.add(model4);
+		list.add(model5);
+		list.add(model6);
+		list.add(model7);
+		list.add(model8);
+		list.add(model9);
+		list.add(model10);
+		list.add(model11);
+		list.add(model12);
+		list.add(model13);
+		list.add(model14);
+		list.add(model15);
+		list.add(model16);
+		list.add(model17);
+		list.add(model18);
+
+
 
 		adapter.notifyDataSetChanged();
 
 	}
 
+	private void setUptrending(View trending) {
+		List<catagoryModel> list = new ArrayList<>();
+		Catagory_Adapter adapter = new Catagory_Adapter(list);
+		RecyclerView rv = (RecyclerView) trending.findViewById(R.id.trendview);
+		RecyclerView.LayoutManager mLayoutManager = new GridLayoutManager(getContext());
+		rv.setLayoutManager(mLayoutManager);
+		rv.setItemAnimator(new DefaultItemAnimator());
+		rv.setAdapter(adapter);
+
+		catagoryModel model1 = new catagoryModel(R.drawable.scifi,"science fiction","1000");
+		catagoryModel model2 = new catagoryModel(R.drawable.horror,"Horror","1000");
+		catagoryModel model3 = new catagoryModel(R.drawable.epic,"epic","100");
+		catagoryModel model4 = new catagoryModel(R.drawable.fiction,"fiction","1000");
+		catagoryModel model5 = new catagoryModel(R.drawable.fantasy,"fantasy","1000");
+		catagoryModel model6 = new catagoryModel(R.drawable.children,"children","1000");
+		catagoryModel model7 = new catagoryModel(R.drawable.humour,"humour","1000");
+		catagoryModel model8 = new catagoryModel(R.drawable.thriller,"thriller","1000");
+		catagoryModel model9 = new catagoryModel(R.drawable.autobiographies,"Autobiographies","1000");
+		catagoryModel model10 = new catagoryModel(R.drawable.poetry,"poetry","1000");
+
+
+		list.add(model1);
+		list.add(model2);
+		list.add(model3);
+		list.add(model4);
+		list.add(model5);
+		list.add(model6);
+		list.add(model7);
+		list.add(model8);
+		list.add(model9);
+		list.add(model10);
+
+
+		adapter.notifyDataSetChanged();
+
+	}
 
 	// TODO: Rename method, update argument and hook method into UI event
 	public void onButtonPressed(Uri uri) {
